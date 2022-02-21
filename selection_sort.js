@@ -5,10 +5,12 @@ var arr = new Array(arr_size);
 var div = new Array(arr_size);
 var count=0;
 var check=0;
-function ra(){
+ function ra(){
   if(count==1)
   check=1;
   count=0;
+  // let speed=document.getElementById('arr_sz').value;
+  // await resolveAfter2Seconds(speed*0.5);
 arr=Array.from({length: arr_size}, () => Math.floor(Math.random() * 200));
     
 
@@ -22,10 +24,10 @@ arr=Array.from({length: arr_size}, () => Math.floor(Math.random() * 200));
     div[i]=a;
     let h=arr[i];
     div[i].style.height= h+"px";
-    div[i].style.width="1%";
+    div[i].style.width="1vw";
     div[i].style.display= "inline-block" ;
     div[i].style.backgroundColor = "red";
-    div[i].style.border= "2px black solid";
+    div[i].style.border= "1px black solid";
     div[i].setAttribute("class", h);
     
     }

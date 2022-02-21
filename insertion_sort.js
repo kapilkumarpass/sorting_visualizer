@@ -29,7 +29,7 @@ function resolveAfter2Seconds(speed) {
         di.style.backgroundColor="yellow";
         di.style.marginTop=200+"px";
         di.style.width="15px";
-        // di.style.marginLeft=500+"px";
+        
         di.style.display= "inline-block" ;
         di.style.backgroundColor = "red";
         di.style.border= "2px black solid";
@@ -39,19 +39,12 @@ function resolveAfter2Seconds(speed) {
     
             arr[j+1] = arr[j];
             
-        
-
             div[j].style.backgroundColor="green";
             
-            // await resolveAfter2Seconds(speed);
             div[j+1].style.height=arr[j]+"px";
             div[j+1].setAttribute("class", arr[j]);
 
-          
-        //   await resolveAfter2Seconds(speed);
           div[j+1].style.backgroundColor="orange";
-          
-          
           
           if(check!=1)
           await resolveAfter2Seconds(speed*0.3);
