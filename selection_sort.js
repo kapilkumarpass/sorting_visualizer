@@ -5,7 +5,7 @@ var arr = new Array(arr_size);
 var div = new Array(arr_size);
 var count=0;
 var check=0;
- function ra(){
+ function generate(){
   if(count==1)
   check=1;
   count=0;
@@ -16,6 +16,8 @@ arr=Array.from({length: arr_size}, () => Math.floor(Math.random() * 200));
 
   let par=document.getElementsByClassName("parent")[0];
   par.innerHTML="";
+  let pivot=document.getElementsByClassName("pivot")[0];
+              pivot.innerHTML="";
     for(let i=0;i<arr_size;i++)
     {
     let a=document.createElement("DIV");
@@ -34,7 +36,7 @@ arr=Array.from({length: arr_size}, () => Math.floor(Math.random() * 200));
     
 }
 
-document.getElementsByClassName("clk")[0].addEventListener("click", ra);
+document.getElementsByClassName("clk")[0].addEventListener("click", generate);
 
 
 function resolveAfter2Seconds(speed) {
