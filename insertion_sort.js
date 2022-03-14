@@ -28,12 +28,12 @@ function resolveAfter2Seconds(speed) {
         let pivot=document.getElementsByClassName("pivot")[0];
         di.style.height=arr[i]+"px";
         di.style.backgroundColor="yellow";
-        di.style.marginTop=150+"px";
+        di.style.marginTop=140+"px";
         di.style.width="15px";
         
         di.style.display= "inline-block" ;
         di.style.backgroundColor = "red";
-        di.style.border= "2px black solid";
+        di.style.border= "1px black solid";
         pivot.appendChild(di);
         while ((j > -1) && (current < arr[j])) {
 
@@ -66,18 +66,8 @@ function resolveAfter2Seconds(speed) {
           await resolveAfter2Seconds(speed);
           div[j+1].style.backgroundColor="orange";
           pivot.removeChild(pivot.childNodes[0]);
-          // if(check==1)
-          //   {count=0;
-          //       check=0;
-          //       return ;
-          //   }
-            
-     
-          
+        
       }
-     
-      
-      
       
     }
    
