@@ -1,6 +1,5 @@
 async function partition(start, end){
-    // Taking the last element as the pivot
-   
+    
     const pivotValue = arr[end];
     div[end].style.backgroundColor="yellow";
     let speed=document.getElementById('arr_sz').value;
@@ -13,7 +12,7 @@ async function partition(start, end){
         return ;
         }
         if (arr[i] < pivotValue) {
-        // Swapping elements
+       
         let temp=arr[i];
         
         div[i].style.backgroundColor="blue";
@@ -30,12 +29,12 @@ async function partition(start, end){
       
 
         [arr[i], arr[pivotIndex]] = [arr[pivotIndex], arr[i]];
-        // Moving to next element
+        
         pivotIndex++;
         }
     }
     
-    // Putting the pivot value in the middle
+    
     await resolveAfter2Seconds(speed);
         let temp=arr[end];
         
@@ -56,16 +55,14 @@ async function partition(start, end){
 };
 
 async function quickSortRecursive(start, end) {
-    // Base case or terminating case
+  
     
     if (start >= end) {
         return;
     }
     
-    // Returns pivotIndex
     let index = await partition(start, end);
     
-    // Recursively apply the same logic to the left and right subarrays
     await quickSortRecursive(start, index - 1);
     if(check==1)
           {count=0;
