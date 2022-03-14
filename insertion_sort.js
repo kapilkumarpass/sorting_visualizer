@@ -28,7 +28,7 @@ function resolveAfter2Seconds(speed) {
         let pivot=document.getElementsByClassName("pivot")[0];
         di.style.height=arr[i]+"px";
         di.style.backgroundColor="yellow";
-        di.style.marginTop=200+"px";
+        di.style.marginTop=150+"px";
         di.style.width="15px";
         
         di.style.display= "inline-block" ;
